@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: sjlealmslearndotnetcloudnativedevops 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sjlealmslearndotnetcloudnativedevops
+  template:
+    metadata:
+      labels:
+        app: sjlealmslearndotnetcloudnativedevops 
+    spec:
+      containers:
+        - name: sjlealmslearndotnetcloudnativedevops 
+          image: acseshop1986.azurecr.io/sjlealmslearndotnetcloudnativedevops
+          ports:
+          - containerPort: 8080

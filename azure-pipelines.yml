@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: 'b99efc8f-a458-4e96-87e4-8757689b2bd4'
   imageRepository: 'sjlealmslearndotnetcloudnativedevops'
   containerRegistry: 'acseshop1986.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '**/DockerfileProducts.acr'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'acseshop198692979a64-auth'
 
